@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Certificate from './components/Certificate';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
 
+/**
+ * Main App Component
+ * Menggabungkan semua komponen menjadi satu aplikasi portfolio
+ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gradient-to-b from-navy-50 via-navy-100 to-navy-white min-h-screen">
+      {/* Custom Cursor */}
+      <CustomCursor />
+      
+      {/* Navigation */}
+      <Navbar />
+      
+      {/* Main Content Sections */}
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Certificate />
+        <Projects />
+      </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
