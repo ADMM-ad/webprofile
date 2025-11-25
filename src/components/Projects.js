@@ -94,6 +94,21 @@ Fitur Utama:
       technologies: ["React","Tailwind CSS"],
       featured: false
     },
+     {
+      id: 6,
+      title: "Website Task Management dan Laporan Hazard",
+     
+      detailedDescription: `Sistem Manajemen Operasional Perusahaan Kapal yang dirancang untuk mempermudah pengelolaan aktivitas kerja. Sistem ini dilengkapi dengan beberapa fitur utama:
+
+• Multi-Role System: Mendukung dua role utama, yaitu Admin dan Crew, dengan hak akses yang disesuaikan sesuai kebutuhan operasional perusahaan kapal.
+• User Management: Pengelolaan akun secara lengkap, meliputi penambahan akun baru, pengaturan role, pencarian data pengguna, serta penghapusan akun yang tidak aktif.
+• Task Management: Pembuatan tugas, penugasan, pelacakan progres pekerjaan, pembaruan status task oleh crew, serta monitoring penyelesaian tugas oleh admin.
+• Laporan Hazard: Pelaporan potensi bahaya atau insiden keselamatan di kapal dengan input tanggal kejadian, judul, deskripsi, serta upload bukti hingga lebih dari satu gambar. Crew dapat menambah atau menghapus gambar sebagai lampiran laporan.
+• Sistem Responsif: Antarmuka dirancang untuk beradaptasi di berbagai perangkat seperti desktop, tablet, dan mobile, memastikan pengalaman pengguna yang optimal dalam kondisi kerja lapangan maupun kantor.`,
+      image: "image/kapal.webp",
+      technologies: ["Laravel 11", "Mysql", "Bootstrap"],
+      featured: false
+    },
   ];
 
   const handleDetailClick = (projectId, e) => {
